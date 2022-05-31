@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --Soft-red: hsl(14, 88%, 65%);
+    
+    
+    
+     --Soft-violet: hsl(273, 75%, 66%);
+     --Soft-blue: hsl(240, 73%, 65%);
+    
+    
+    
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --Dark-grayish-blue: hsl(240, 6%, 50%);
+    
+    
+    
+    --Light-grayish-blue: hsl(240, 5%, 91%);
+    
+}
+body{
+    margin: 0;
+    font-family: "Kumbh Sans",sans-serif;
+    --webkit-font-smoothing:antialiased;
+    --moz-osx-font-smoothing:grayscale;
+    background: linear-gradient(120deg, var(--Soft-violet),var(--Soft-blue));
+    background-repeat: no-repeat;
+    min-height: calc(100vh - 0.1px);
+    font-size: 14px;
+    padding: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background: #fff;
+    padding: 1.25rem;
+    border-radius: 1rem;
+    width: 400px;
+}
+.container>article:first-child img{
+    display: block;
+    margin: auto;
+}
+.container h1{
+    color: hsl(238, 29%, 16%);
+    font-size: 2rem;
+    margin: 1rem 0 1.25rem;
+}
+.article-question{
+    border-bottom: 0.1rem solid var(--Light-grayish-blue);
+    padding: 1rem 0;
+}
+.article-question article{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+.article-question article h2{
+    color: var(--Very-dark-grayish-blue);
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+.article-question article h2.clicked{
+    font-weight: 600;
+}
+.article-question p{
+    color: var(--Dark-grayish-blue);
+}
+.icon{
+    color: var(--Soft-red);
+}
+@media (min-width:768px){
+    .container{
+        width: 700px;
+    }
+}
+@media(min-width:1024px){
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 992px;
+    }
+    .container>article:first-child{
+        flex: 1;
+        margin-right: 3rem;
+    }
+    .container>article:nth-child(2){
+        flex: 1;
+    }
+}
